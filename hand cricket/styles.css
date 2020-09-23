@@ -76,6 +76,9 @@ button{
     font-weight: bolder;
     font-family: 'Merriweather', serif;
 }
+.oddbutton{
+  width:50px;
+}
 .oddbutton:hover{
     background-color:red;
 }
@@ -94,10 +97,14 @@ button{
     font-family: 'Nunito', sans-serif;
 }
 .batbutton{
-    background-color:lightcoral;
+    background-color:orange;
+    width:56px;
+    height:26px;
 }
 .bowlbutton{
-    background-color:lightcoral;
+   background-color:orange;
+    width:56px;
+    height:26px;
 }
 .batbutton:hover{
     background-color:red;
