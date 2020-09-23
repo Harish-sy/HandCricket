@@ -117,7 +117,7 @@ button{
     font-size:medium;
 }
 .field-text{
-    color:red;
+    color:indianred;
     font-size:larger;
 }
 .toss-text{
@@ -136,7 +136,7 @@ button{
     color:darkblue;
     font-weight: bolder;
     font-size:large;
-    font-family: 'Merriweather', serif;
+     font-family: 'Nunito', sans-serif;
     display:none;
 }
 .field-result{
