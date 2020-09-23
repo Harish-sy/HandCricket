@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body></body>
+    <header>
+        <h1>Hand Cricket 🏏</h1>
+     </header><hr>
+   <div class="main">
+    <div class="toss" id="toss">
+      <div class="toss-div"> <span class="spantext"> Toss First  : </span>
+        <button id="odd" class="oddbutton toss-button">odd</button>  or 
+        <button id="even" class="evenbutton toss-button">even</button> </div>
+         
+     </div><hr>
+     <div class="tosspics" id="tosspics">
+        <span id="zerotoss" class="tossimg" >✊</span>
+        <span id="onetoss" class="tossimg">☝</span>
+        <span id="twotoss" class="tossimg" >✌</span>
+        <span id="threetoss" class="tossimg">👌</span>
+        <span id="fourtoss" class="tossimg">🤚</span>
+        <span id="fivetoss" class="tossimg">🖐</span>
+        <span id="sixtoss" class="tossimg">👍</span>
+     </div><hr class="tossdiv">
+    <div class="tossstatus" id="tossstatus">
+        <span class="toss-text">Toss Status</span> : <span id="tr" class="toss-result">👆🏻</span>
+        <h3 id="trnext" class="trnext">chooses</h3>
+       </div><hr class="fielddiv">
+       <div id="choose">
+        <span class="spanchoosetext">Choose</span> : 
+        <button type="button" id="bat" class="batbutton " >Bat</button> or
+        <button type="button" id="bowl" class="bowlbutton " >Bowl</button>
+         
+     </div><hr>
+
+      <div id="targettext"> <h2 id="targeth"> Target </h2> </div><hr>
+         
+    
+    <div class="fieldstatus" id="fieldstatus">
+        <span class="field-text">Field Status</span> : <span id="fr" class="field-result">User vs Computer</span>
+        
+      </div><hr>
+    
+    
+   
+    <div class="scoreboard">
+        <p  class="img-user" id="imguser">🤵</p>
+        <div class="user">User</div>
+        <p class="img-comp" id="imgcomp">💻</p>
+        <div class="computer">Computer</div>
+        <span class="userscore  score" id="userid">0</span><span class="score">:</span><span class="computerscore  score" id="computerid">0</span>
+    </div><hr>
+    <div class="icons" id="icons_bat_first">
+     <span class="images" id="zero_bat_first" >✊🏽</span>
+      <span class="images" id="one_bat_first">☝🏽</span>
+      <span class="images" id="two_bat_first" >✌🏽</span>
+      <span class="images" id="three_bat_first" >👌🏽</span>
+      <span class="images" id="four_bat_first" >🤚🏽</span>
+      <span class="images" id="five_bat_first" >🖐🏽</span>
+      <span class="images" id="six_bat_first" >👍🏽</span>   
+    </div><hr>
+    <div class="icons" id="icons_bowl_first">
+        <span class="images" id="zero_bowl_first" >✊🏽</span>
+         <span class="images" id="one_bowl_first">☝🏽</span>
+         <span class="images" id="two_bowl_first" >✌🏽</span>
+         <span class="images" id="three_bowl_first" >👌🏽</span>
+         <span class="images" id="four_bowl_first" >🤚🏽</span>
+         <span class="images" id="five_bowl_first" >🖐🏽</span>
+         <span class="images" id="six_bowl_first" >👍🏽</span>   
+       </div><hr>
+       <div class="icons" id="icons_bowl_second">
+        <span class="images" id="zero_bowl_second" >✊🏽</span>
+         <span class="images" id="one_bowl_second">☝🏽</span>
+         <span class="images" id="two_bowl_second" >✌🏽</span>
+         <span class="images" id="three_bowl_second" >👌🏽</span>
+         <span class="images" id="four_bowl_second" >🤚🏽</span>
+         <span class="images" id="five_bowl_second" >🖐🏽</span>
+         <span class="images" id="six_bowl_second" >👍🏽</span>   
+       </div><hr>
+       <div class="icons" id="icons_bat_second">
+        <span class="images" id="zero_bat_second" >✊🏽</span>
+         <span class="images" id="one_bat_second">☝🏽</span>
+         <span class="images" id="two_bat_second" >✌🏽</span>
+         <span class="images" id="three_bat_second" >👌🏽</span>
+         <span class="images" id="four_bat_second" >🤚🏽</span>
+         <span class="images" id="five_bat_second" >🖐🏽</span>
+         <span class="images" id="six_bat_second">👍🏽</span>   
+       </div><hr>
+   
+    <div class="tapdiv" id="tapdiv">
+     <button type="button" class="tap" id="tapbat_first" >Tap to bat</button>
+     <button type="button" class="tap" id="tapbowl_first" >Tap to bowl</button>
+     <button type="button" class="tap" id="tapbat_second" >Tap to bat</button>
+     <button type="button" class="tap" id="tapbowl_second" >Tap to bowl</button>
+</div>
+    <footer>
+        <h2 id="result">Play</h2>
+        <button type="button" id="refresh">New Game</button>
+      </footer><hr>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
