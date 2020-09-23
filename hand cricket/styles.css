@@ -117,7 +117,7 @@ button{
     font-size:medium;
 }
 .field-text{
-    color:indianred;
+    color:red;
     font-size:larger;
 }
 .toss-text{
@@ -140,7 +140,7 @@ button{
     display:none;
 }
 .field-result{
-    color:brown;
+    color:darkred;
     font-size:larger;
 }
 
