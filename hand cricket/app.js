@@ -209,6 +209,7 @@ function firstcase(){
         targettext.style.display = "block";
         const target = Number(userscore) + Number(1)
         targeth.innerHTML="Computer-Target : " + target;
+        fieldresult.innerHTML = "You're Bowling Now";
         icons_bat_first.style.display = "none";
         tapbowl_first.style.display = "inline-block";
         tapbowl_first.onclick = maintwo_first;
@@ -235,7 +236,7 @@ function firstcase(){
         if(computerbattingchoice==4){imgcomp.innerHTML="🤚🏼"};
         if(computerbattingchoice==5){imgcomp.innerHTML="🖐🏼"};
         if(computerbattingchoice==6){imgcomp.innerHTML="👍🏼"};
-        fieldresult.innerHTML = "You're Bowling Now";
+        
         if(userbowlingchoice != computerbattingchoice && computerscore<=userscore){
         computerscore=Number(computerscore)+Number(computerbattingchoice);
         computerid.innerHTML = computerscore;
@@ -315,6 +316,7 @@ function firstcase(){
         targettext.style.display = "block";
         const target =  Number(computerscore) + Number(1)
         targeth.innerHTML = "User-Target : " + target; 
+        fieldresult.innerHTML = "You're Batting now";
         icons_bowl_second.style.display = "none";
         tapbat_second.style.display = "inline-block";
         tapbat_second.onclick = maintwo_second;
@@ -341,7 +343,7 @@ function firstcase(){
         if(computerbowlingchoice==4){imgcomp.innerHTML="🤚🏼"};
         if(computerbowlingchoice==5){imgcomp.innerHTML="🖐🏼"};
         if(computerbowlingchoice==6){imgcomp.innerHTML="👍🏼"};
-        fieldresult.innerHTML = "You're Batting now";
+        
        if(userbattingchoice != computerbowlingchoice && userscore<=computerscore){
          userscore=Number(userscore)+Number(userbattingchoice);
          userid.innerHTML = userscore;
