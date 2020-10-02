@@ -237,18 +237,28 @@ function firstcase(){
         if(computerbattingchoice==5){imgcomp.innerHTML="🖐🏼"};
         if(computerbattingchoice==6){imgcomp.innerHTML="👍🏼"};
         
-        if(userbowlingchoice != computerbattingchoice && computerscore<=userscore){
-        computerscore=Number(computerscore)+Number(computerbattingchoice);
-        computerid.innerHTML = computerscore;
-        }
-        else if(computerscore>userscore){
+         if(userbowlingchoice != computerbattingchoice ){
+          computerscore=Number(computerscore)+Number(computerbattingchoice);
+          computerid.innerHTML = computerscore;
+        
+        }    
+        if(computerscore>userscore){
+          icons_bowl_first.style.display = "none";
+          results_first();
+         } 
+        
+        if(userbowlingchoice == computerbattingchoice)
+        {
           icons_bowl_first.style.display = "none";
           results_first();
         }
-        else{
+
+        if(userbowlingchoice == computerbattingchoice && computerscore==userscore)
+        {
           icons_bowl_first.style.display = "none";
           results_first();
         }
+       
       }
         function results_first(){
             if(userscore>computerscore){
@@ -344,18 +354,24 @@ function firstcase(){
         if(computerbowlingchoice==5){imgcomp.innerHTML="🖐🏼"};
         if(computerbowlingchoice==6){imgcomp.innerHTML="👍🏼"};
         
-       if(userbattingchoice != computerbowlingchoice && userscore<=computerscore){
+         if(userbattingchoice != computerbowlingchoice ){
          userscore=Number(userscore)+Number(userbattingchoice);
          userid.innerHTML = userscore;
          }
-         else if(userscore>computerscore){
+        if(userscore>computerscore){
           icons_bat_second.style.display = "none";
           results_second();
          }
-        else{
+        if(userbattingchoice == computerbowlingchoice ){
           icons_bat_second.style.display = "none";
           results_second();
         }
+         
+        if(userbattingchoice == computerbowlingchoice && userscore==computerscore){
+          icons_bat_second.style.display = "none";
+          results_second();
+        }
+       
         } 
        
           function results_second(){
