@@ -124,8 +124,9 @@ button{
     font-size:medium;
 }
 .field-text{
-    color:#d2691e;
+    color:crimson;
     font-size:larger;
+     font-family:'Ubuntu', sans-serif;
 }
 .toss-text{
     color:darkmagenta;
@@ -241,6 +242,7 @@ footer{
 }
 #result{
     font-size:x-large;
+    font-family:'Ubuntu', sans-serif;
 }
 hr{
 border-color:aqua;
