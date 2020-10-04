@@ -44,6 +44,7 @@ padding-bottom: 2px; padding-top: 10px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: x-large;
+   
 }
 #tossresultspan{
     position:relative;
@@ -53,7 +54,6 @@ padding-bottom: 2px; padding-top: 10px;
     color:red;
     display: none;
 }
-
 .tosspics{
     text-align: center;
     display:none;
@@ -84,15 +84,17 @@ button{
     font-weight: bolder;
     font-family: 'Merriweather', serif;
 }
-.oddbutton{
-  width:50px;
-}
 .oddbutton:hover{
     background-color:red;
 }
 .evenbutton:hover{
     background-color:green;
 }
+.oddbutton{
+    width: 50px;
+}
+
+
 #choose{
     text-align: center;
     margin-bottom: 3px;
@@ -110,7 +112,7 @@ button{
     height:26px;
 }
 .bowlbutton{
-   background-color:orange;
+    background-color:orange;
     width:56px;
     height:26px;
 }
@@ -124,17 +126,20 @@ button{
     text-align: center;
     padding-top:5px;
     padding-bottom:5px;
-     font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
 }
 .tossstatus{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size:medium;
 }
+
 .field-text{
     color:crimson;
     font-size:larger;
-     font-family:'Ubuntu', sans-serif;
+    font-family:'Ubuntu', sans-serif;
+
 }
 .toss-text{
     color:darkmagenta;
@@ -152,12 +157,13 @@ button{
     color:darkblue;
     font-weight: bolder;
     font-size:large;
-     font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     display:none;
 }
 .field-result{
     color:darkred;
     font-size:larger;
+    
 }
 
 
@@ -261,7 +267,7 @@ border: 1px;
     text-align: center;
     background-color:indianred;
     color:gold;
-    display: none;
+    display: none; 
     font-size: large;
  
     
@@ -296,7 +302,35 @@ border: 1px;
     background-color:green;
     
 }
+.totalmatches{
+    color: crimson;
+    position:relative;
+    bottom:30px;
+    right:15px;
 
+}
+.totals{
+    position:relative;
+    bottom:30px;
+    left:-15px;
+}
+.totalwins{
+  position: relative;
+  bottom:25px;
+}
 
+.totalloses{
+   position:relative;
+   bottom:20px;
+   right:5px;
+}
+.draws{
+    position:relative;
+    bottom:15px;
+    right:5px;
+}
+.it{
+    display:none;
+}
 
 
