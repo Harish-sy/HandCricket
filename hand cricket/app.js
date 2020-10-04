@@ -85,7 +85,7 @@ function computerfieldselection(){
 /* -------------------------------oddman evenman functions for toss process---------------------------*/
 function evenman(usereventosschoice){
   const computereventosschoice = computer();
-   if(computereventosschoice==0){tosscomp.innerHTML="✊🏼"};
+  if(computereventosschoice==0){tosscomp.innerHTML="✊🏼"};
   if(computereventosschoice==1){tosscomp.innerHTML="☝🏼"};
   if(computereventosschoice==2){tosscomp.innerHTML="✌🏼"};
   if(computereventosschoice==3){tosscomp.innerHTML="👌🏼"};
@@ -93,7 +93,7 @@ function evenman(usereventosschoice){
   if(computereventosschoice==5){tosscomp.innerHTML="🖐🏼"};
   if(computereventosschoice==6){tosscomp.innerHTML="👍🏼"};
   const totalevenmantoss = Number(computereventosschoice) + Number(usereventosschoice);
-   tossresultspan.innerHTML = totalevenmantoss;
+  tossresultspan.innerHTML = totalevenmantoss; 
   if(totalevenmantoss % 2 == 0){
          tosswin();
     }
@@ -103,7 +103,7 @@ function evenman(usereventosschoice){
 };
 function oddman(useroddtosschoice){
    const computeroddtosschoice = computer();
-    if(computeroddtosschoice==0){tosscomp.innerHTML="✊🏼"};
+   if(computeroddtosschoice==0){tosscomp.innerHTML="✊🏼"};
    if(computeroddtosschoice==1){tosscomp.innerHTML="☝🏼"};
    if(computeroddtosschoice==2){tosscomp.innerHTML="✌🏼"};
    if(computeroddtosschoice==3){tosscomp.innerHTML="👌🏼"};
@@ -111,7 +111,7 @@ function oddman(useroddtosschoice){
    if(computeroddtosschoice==5){tosscomp.innerHTML="🖐🏼"};
    if(computeroddtosschoice==6){tosscomp.innerHTML="👍🏼"};
     const totaloddmantoss = Number(computeroddtosschoice) + Number(useroddtosschoice);
-     tossresultspan.innerHTML = totaloddmantoss;
+    tossresultspan.innerHTML = totaloddmantoss;
     if(totaloddmantoss % 2 != 0){
      tosswin();
      }
@@ -144,15 +144,15 @@ function oddman(useroddtosschoice){
 }/*-----------------------Get numbers from user for even selection process-----------------------------*/
  /*-------------------------------Tosswin Function------------------------------------------------------*/
 function tosswin(){
-     tosschosediv.style.display="none";
+   tosschosediv.style.display="none";
     tosspics.style.display="none";
-     tossresultspan.style.display = "inline-block";
+    tossresultspan.style.display = "inline-block";
     userselection();
 }/*---------------------------------Tosslose Function--------------------------------------------------*/
 function tossloss(){
-    tosschosediv.style.display="none";
+   tosschosediv.style.display="none";
     tosspics.style.display="none";
-     tossresultspan.style.display = "inline-block";
+    tossresultspan.style.display = "inline-block";
   computerselection();
 }
 /*---------------------------------user-field selection process--------------------------------------*/
@@ -210,7 +210,7 @@ function firstcase(){
      function main_first(){
        tapbat_first.style.display = "none";
        icons_bat_first.style.display="block";
-          tossstatus.style.display = "none";
+       tossstatus.style.display = "none";
        tossdiv.style.display="none";
        function firstinnings_first(num){
       const userbattingchoice = num; 
@@ -261,10 +261,10 @@ function firstcase(){
         if(computerbattingchoice==4){imgcomp.innerHTML="🤚🏼"};
         if(computerbattingchoice==5){imgcomp.innerHTML="🖐🏼"};
         if(computerbattingchoice==6){imgcomp.innerHTML="👍🏼"};
-        
-         if(userbowlingchoice != computerbattingchoice ){
-          computerscore=Number(computerscore)+Number(computerbattingchoice);
-          computerid.innerHTML = computerscore;
+
+        if(userbowlingchoice != computerbattingchoice ){
+           computerscore=Number(computerscore)+Number(computerbattingchoice);
+           computerid.innerHTML = computerscore;
         
         }    
         if(computerscore>userscore){
@@ -272,7 +272,7 @@ function firstcase(){
           results_first();
          } 
         
-        if(userbowlingchoice == computerbattingchoice)
+         if(userbowlingchoice == computerbattingchoice)
         {
           icons_bowl_first.style.display = "none";
           results_first();
@@ -283,8 +283,8 @@ function firstcase(){
           icons_bowl_first.style.display = "none";
           results_first();
         }
-       
-      }
+      
+    }
         function results_first(){
             if(userscore>computerscore){
                 result.innerHTML = "You Won The Match";
@@ -330,7 +330,7 @@ function firstcase(){
   function main_second(){
   tapbowl_second.style.display="none";
   icons_bowl_second.style.display="block";
-       tossstatus.style.display = "none";
+     tossstatus.style.display = "none";
      tossdiv.style.display="none";
   function firstinnings_second(a){
      const userbowlingchoice = a;
@@ -343,7 +343,7 @@ function firstcase(){
      if(computerbattingchoice==5){imgcomp.innerHTML="🖐🏼"};
      if(computerbattingchoice==6){imgcomp.innerHTML="👍🏼"};
      fieldresult.innerHTML = "You're Bowling now";
-    
+     
     if(userbowlingchoice != computerbattingchoice && userscore==0){
         computerscore=Number(computerscore)+Number(computerbattingchoice);
         computerid.innerHTML = computerscore;
@@ -380,8 +380,8 @@ function firstcase(){
         if(computerbowlingchoice==4){imgcomp.innerHTML="🤚🏼"};
         if(computerbowlingchoice==5){imgcomp.innerHTML="🖐🏼"};
         if(computerbowlingchoice==6){imgcomp.innerHTML="👍🏼"};
-        
-         if(userbattingchoice != computerbowlingchoice ){
+       
+       if(userbattingchoice != computerbowlingchoice ){
          userscore=Number(userscore)+Number(userbattingchoice);
          userid.innerHTML = userscore;
          }
@@ -398,8 +398,7 @@ function firstcase(){
           icons_bat_second.style.display = "none";
           results_second();
         }
-       
-        } 
+    } 
        
           function results_second(){
            if(userscore>computerscore){
@@ -477,9 +476,10 @@ function firstcase(){
     three_bowl_second.addEventListener("click",function(){pics(3)});
     four_bowl_second.addEventListener("click",function(){pics(4)});
     five_bowl_second.addEventListener("click",function(){pics(5)});
-     six_bowl_second.addEventListener("click",function(){pics(6)});
+     six_bowl_second.addEventListener("click",function(){pics(6)}); 
 
-function picsman(p){
+
+     function picsman(p){
       if(p==0){tossuser.innerHTML="✊"};
       if(p==1){tossuser.innerHTML="☝"};
       if(p==2){tossuser.innerHTML="✌"};
@@ -497,6 +497,7 @@ function picsman(p){
      fivetoss.addEventListener("click",function(){picsman(5)});
      sixtoss.addEventListener("click",function(){picsman(6)});
 
+    
   /*--------------------------------------Refresh-------------------------------------------------------*/
    refresh.onclick=refreshpage;
    function refreshpage(){
