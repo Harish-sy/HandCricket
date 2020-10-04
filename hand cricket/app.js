@@ -63,6 +63,11 @@ const tapbowl_second = document.getElementById("tapbowl_second");
 const targettext = document.getElementById("targettext");
 const targeth = document.getElementById("targeth");
 const trnext = document.getElementById("trnext");
+const tossuser = document.getElementById("tossuser");
+const tosscomp = document.getElementById("tosscomp");
+const tosschosediv = document.getElementById("tosschosediv");
+const tossresultspan = document.getElementById("tossresultspan");
+
 /*------------------------------ Declaration process--------------------------------------------------- */
 /*------------------------------Computer Selections-------------------------------------------------------*/
 function computer(){
@@ -80,7 +85,15 @@ function computerfieldselection(){
 /* -------------------------------oddman evenman functions for toss process---------------------------*/
 function evenman(usereventosschoice){
   const computereventosschoice = computer();
+   if(computereventosschoice==0){tosscomp.innerHTML="✊🏼"};
+  if(computereventosschoice==1){tosscomp.innerHTML="☝🏼"};
+  if(computereventosschoice==2){tosscomp.innerHTML="✌🏼"};
+  if(computereventosschoice==3){tosscomp.innerHTML="👌🏼"};
+  if(computereventosschoice==4){tosscomp.innerHTML="🤚🏼"};
+  if(computereventosschoice==5){tosscomp.innerHTML="🖐🏼"};
+  if(computereventosschoice==6){tosscomp.innerHTML="👍🏼"};
   const totalevenmantoss = Number(computereventosschoice) + Number(usereventosschoice);
+   tossresultspan.innerHTML = totalevenmantoss;
   if(totalevenmantoss % 2 == 0){
          tosswin();
     }
@@ -90,7 +103,15 @@ function evenman(usereventosschoice){
 };
 function oddman(useroddtosschoice){
    const computeroddtosschoice = computer();
+    if(computeroddtosschoice==0){tosscomp.innerHTML="✊🏼"};
+   if(computeroddtosschoice==1){tosscomp.innerHTML="☝🏼"};
+   if(computeroddtosschoice==2){tosscomp.innerHTML="✌🏼"};
+   if(computeroddtosschoice==3){tosscomp.innerHTML="👌🏼"};
+   if(computeroddtosschoice==4){tosscomp.innerHTML="🤚🏼"};
+   if(computeroddtosschoice==5){tosscomp.innerHTML="🖐🏼"};
+   if(computeroddtosschoice==6){tosscomp.innerHTML="👍🏼"};
     const totaloddmantoss = Number(computeroddtosschoice) + Number(useroddtosschoice);
+     tossresultspan.innerHTML = totaloddmantoss;
     if(totaloddmantoss % 2 != 0){
      tosswin();
      }
@@ -123,13 +144,15 @@ function oddman(useroddtosschoice){
 }/*-----------------------Get numbers from user for even selection process-----------------------------*/
  /*-------------------------------Tosswin Function------------------------------------------------------*/
 function tosswin(){
-    tossdiv.style.display="none";
+     tosschosediv.style.display="none";
     tosspics.style.display="none";
+     tossresultspan.style.display = "inline-block";
     userselection();
 }/*---------------------------------Tosslose Function--------------------------------------------------*/
 function tossloss(){
-    tossdiv.style.display="none";
+    tosschosediv.style.display="none";
     tosspics.style.display="none";
+     tossresultspan.style.display = "inline-block";
   computerselection();
 }
 /*---------------------------------user-field selection process--------------------------------------*/
@@ -187,6 +210,8 @@ function firstcase(){
      function main_first(){
        tapbat_first.style.display = "none";
        icons_bat_first.style.display="block";
+          tossstatus.style.display = "none";
+       tossdiv.style.display="none";
        function firstinnings_first(num){
       const userbattingchoice = num; 
       const computerbowlingchoice =computer();
@@ -198,7 +223,7 @@ function firstcase(){
       if(computerbowlingchoice==5){imgcomp.innerHTML="🖐🏼"};
       if(computerbowlingchoice==6){imgcomp.innerHTML="👍🏼"};
       fieldresult.innerHTML = "You're Batting now";
-      tossstatus.style.display = "none";
+     
       if(computerbowlingchoice != userbattingchoice && computerscore==0){
        userscore=Number(userscore)+Number(userbattingchoice);
        userid.innerHTML = userscore;
@@ -305,6 +330,8 @@ function firstcase(){
   function main_second(){
   tapbowl_second.style.display="none";
   icons_bowl_second.style.display="block";
+       tossstatus.style.display = "none";
+     tossdiv.style.display="none";
   function firstinnings_second(a){
      const userbowlingchoice = a;
      const computerbattingchoice = computer();
@@ -316,7 +343,7 @@ function firstcase(){
      if(computerbattingchoice==5){imgcomp.innerHTML="🖐🏼"};
      if(computerbattingchoice==6){imgcomp.innerHTML="👍🏼"};
      fieldresult.innerHTML = "You're Bowling now";
-     tossstatus.style.display = "none";
+    
     if(userbowlingchoice != computerbattingchoice && userscore==0){
         computerscore=Number(computerscore)+Number(computerbattingchoice);
         computerid.innerHTML = computerscore;
@@ -451,6 +478,25 @@ function firstcase(){
     four_bowl_second.addEventListener("click",function(){pics(4)});
     five_bowl_second.addEventListener("click",function(){pics(5)});
      six_bowl_second.addEventListener("click",function(){pics(6)});
+
+function picsman(p){
+      if(p==0){tossuser.innerHTML="✊"};
+      if(p==1){tossuser.innerHTML="☝"};
+      if(p==2){tossuser.innerHTML="✌"};
+      if(p==3){tossuser.innerHTML="👌"};
+      if(p==4){tossuser.innerHTML="🤚"};
+      if(p==5){tossuser.innerHTML="🖐"};
+      if(p==6){tossuser.innerHTML="👍"};
+    }
+
+     doketoss.addEventListener("click",function(){picsman(0)});
+     onetoss.addEventListener("click",function(){picsman(1)});
+     twotoss.addEventListener("click",function(){picsman(2)});
+     threetoss.addEventListener("click",function(){picsman(3)});
+     fourtoss.addEventListener("click",function(){picsman(4)});
+     fivetoss.addEventListener("click",function(){picsman(5)});
+     sixtoss.addEventListener("click",function(){picsman(6)});
+
   /*--------------------------------------Refresh-------------------------------------------------------*/
    refresh.onclick=refreshpage;
    function refreshpage(){
