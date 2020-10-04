@@ -93,12 +93,14 @@ function evenman(usereventosschoice){
   if(computereventosschoice==5){tosscomp.innerHTML="🖐🏼"};
   if(computereventosschoice==6){tosscomp.innerHTML="👍🏼"};
   const totalevenmantoss = Number(computereventosschoice) + Number(usereventosschoice);
-  tossresultspan.innerHTML = totalevenmantoss; 
+ 
   if(totalevenmantoss % 2 == 0){
          tosswin();
+       tossresultspan.innerHTML = totalevenmantoss; 
     }
     else{
          tossloss();
+         tossresultspan.innerHTML = totalevenmantoss; 
      }
 };
 function oddman(useroddtosschoice){
@@ -111,12 +113,14 @@ function oddman(useroddtosschoice){
    if(computeroddtosschoice==5){tosscomp.innerHTML="🖐🏼"};
    if(computeroddtosschoice==6){tosscomp.innerHTML="👍🏼"};
     const totaloddmantoss = Number(computeroddtosschoice) + Number(useroddtosschoice);
-    tossresultspan.innerHTML = totaloddmantoss;
+   
     if(totaloddmantoss % 2 != 0){
      tosswin();
+         tossresultspan.innerHTML = totaloddmantoss;
      }
     else{
      tossloss();
+         tossresultspan.innerHTML = totaloddmantoss;
     }
 }
 /*------------------------------------------------------------------------------------------------------*/
