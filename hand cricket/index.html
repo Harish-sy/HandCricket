@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hand Cricket</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito:wght@300&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body></body>
@@ -14,12 +14,13 @@
      </header><hr>
    <div class="main">
     <div class="toss" id="toss">
-         <p  class="img-user" id="tossuser">🤜🏽</p>
-      <div class="toss-div"> <span class="spantext"> Toss :</span>
-        <button id="odd" class="oddbutton toss-button">odd</button>  or 
-        <button id="even" class="evenbutton toss-button">even</button> </div>
-        <span id="tossresultspan">0</span>
-          <p class="img-comp" id="tosscomp">🤛🏽</p>
+      <p  class="img-user" id="tossuser">🤜🏽</p>
+      <div class="toss-div" id="tosschosediv"> <span class="spantext"> Toss First  : </span>
+        <button id="odd" class="oddbutton toss-button ">odd</button>  or 
+        <button id="even" class="evenbutton toss-button ">even</button>
+       </div>
+       <span id="tossresultspan">0</span>
+       <p class="img-comp" id="tosscomp">🤛🏽</p>
      </div><hr>
      <div class="tosspics" id="tosspics">
         <span id="zerotoss" class="tossimg" >✊</span>
@@ -35,9 +36,9 @@
         <h3 id="trnext" class="trnext">chooses</h3>
        </div><hr class="fielddiv">
        <div id="choose">
-        <span class="spanchoosetext">Choose</span> : 
-        <button type="button" id="bat" class="batbutton " >Bat</button> or
-        <button type="button" id="bowl" class="bowlbutton " >Bowl</button>
+        <span>Choose</span> : 
+        <button type="button" id="bat" class="batbutton" >Bat</button> or
+        <button type="button" id="bowl" class="bowlbutton" >Bowl</button>
          
      </div><hr>
 
@@ -103,9 +104,20 @@
 </div>
     <footer>
         <h2 id="result">Play</h2>
+        <div class="scoreboard it">
+          <p  class="img-user" id="imguser">🤵</p>
+          <p class="img-comp" id="imgcomp">💻</p>
+          <span class="totalmatches">Matches : </span><span class="totals">0</span><br>
+        <span class="totalwins">Wins : 0</span> <br>
+        <span class="totalloses">Loses : 0</span> <br>
+        <span class="draws">Draws : 0</span> <br>
+
+      </div><hr>
         <button type="button" id="refresh">New Game</button>
       </footer><hr>
-    <script src="app.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script> 
+</script>
+
 </body>
 
 </html>
