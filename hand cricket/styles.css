@@ -146,13 +146,13 @@ button{
     color:darkmagenta;
     font-weight: bolder;
     font-size:large;
-    font-family: cursive;
+    font-family:sans-serif;
 }
 .toss-result{
     color:darkgreen;
     font-weight: bolder;
     font-size:large;
-    font-family:cursive;
+    font-family:sans-serif;
 }
 .trnext{
     color:darkblue;
