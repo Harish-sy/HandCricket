@@ -1,11 +1,12 @@
 body{
     background: rgb(34,159,195);
+   
 }
 header{
      padding-top: 10px;
     text-align: center;
-    font-family:sans-serif;
-    color:brown;
+    font-family:cursive;
+    color:rgb(163, 34, 34);
 }
 h1{
     margin-top:10px;
@@ -41,10 +42,12 @@ padding-bottom: 2px; padding-top: 10px;
 .toss-div{
     margin:25px;
     margin-left:10px;
-    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: x-large;
    
+}
+.toss-text{
+    font-family: cursive;
 }
 #tossresultspan{
     position:relative;
@@ -78,9 +81,10 @@ padding-bottom: 2px; padding-top: 10px;
 }
 
 button{
-    background-color:violet;
+    background-color:rgb(235, 149, 123);
     color:brown;
     border:2px solid rgb(54, 46, 25);
+    border-radius: 12px;
     font-weight: bolder;
     font-family: 'Merriweather', serif;
 }
@@ -131,27 +135,27 @@ button{
 }
 .tossstatus{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:cursive;
     font-size:medium;
 }
 
 .field-text{
-    color:crimson;
+    color:rgba(4, 68, 18, 0.884);
     font-size:larger;
-    font-family:'Ubuntu', sans-serif;
+    font-family: cursive;
 
 }
 .toss-text{
     color:darkmagenta;
     font-weight: bolder;
     font-size:large;
-    font-family: 'Merriweather', serif;
+    font-family: cursive;
 }
 .toss-result{
     color:darkgreen;
     font-weight: bolder;
     font-size:large;
-    font-family: 'Merriweather', serif;
+    font-family:cursive;
 }
 .trnext{
     color:darkblue;
@@ -279,7 +283,7 @@ border: 1px;
     color:#4b0082;
     text-align: center;
     display:none;
-    font-family: 'Merriweather', serif;
+    font-family:'Ubuntu', sans-serif;
     
     
 }
@@ -296,6 +300,7 @@ border: 1px;
     border-color:brown solid;
     display: none;
     font-size:large;
+    font-family: cursive;
 
 }
 .tap:hover{
@@ -332,5 +337,3 @@ border: 1px;
 .it{
     display:none;
 }
-
-
